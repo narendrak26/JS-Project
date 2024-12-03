@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .maincontainer{
+        width: 40vw;
+        height: 100vh;
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+       }
+       h1{
+        color: black;
+        font-size: 30px;
+        text-align: center;
+       }
+       input{
+        margin-left: 30px;
+        margin-top: 50px;
+       }
+       .radio{
+        font-size: 20px;
+       }
+       button{
+        font-size: 30px;
+        margin-left: 35%;
+        margin-top: 10%;
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+       #feedback{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+     <h1>Please Rate & Subscribe</h1>
+     <input type="checkbox" name="click" id="check">
+     <label for="check" style="font-size: 30px;margin-left: 20px;">Subscribe</label>
+
+     <div class="radio">
+        <input type="radio" name="rating" id="impressed" value="Impressed">
+        <label for="impressed" style="padding-left: 10px;">Impressed</label><br>
+    
+        <input type="radio" name="rating" id="less-satisfied" value="Less Satisfied">
+        <label for="less-satisfied" style="padding-left: 10px;">Less Satisfied</label><br>
+    
+        <input type="radio" name="rating" id="not-satisfied" value="Not Satisfied">
+        <label for="not-satisfied" style="padding-left: 10px;">Not Satisfied</label>
+    </div>
+
+    <button id="submit" onclick="handleClick()">Submit</button>
+    <div id="feedback">
+    <p>Feedback Result</p>
+    <!-- //counter -->
+    </div>
+    </div>
+      <script src="feedback.js"></script>
+</body>
+</html>

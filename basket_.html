@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basket_.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>First Basket: <span id="first_basket"></span></h1>
+        </div>
+        <div class="button">
+
+        <div class="left_btn">
+            <button onclick="left()"><i class='bx bx-left-arrow-alt'></i></button>
+        </div>
+        <div class="right_btn">
+            <button onclick="right()"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+    </div>
+        <div class="right">
+            <h1>Second Basket:<span id="second_basket"></span></h1>
+        </div>
+    </div>
+    <script>
+        let firstBasket =12;
+        let secondBasket =0;
+        let first_btn = document.getElementById("first_basket");
+        let second_btn = document.getElementById("second_basket");
+
+        first_btn.innerHTML = firstBasket;
+        second_btn.innerHTML = secondBasket;
+
+        function left(){
+            firstBasket < 12 ? (firstBasket++,secondBasket--) :"";
+            first_btn.innerHTML = firstBasket;
+            second_btn.innerHTML = secondBasket;
+        }
+        function right(){
+            secondBasket < 12 ? (firstBasket--,secondBasket++) :"";
+            first_btn.innerHTML = firstBasket;
+            second_btn.innerHTML = secondBasket;
+        }
+
+    </script>
+</body>
+</html>

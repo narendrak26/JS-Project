@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: coral;
+}
+/* button:hover{
+    cursor: pointer;
+    
+    border: 2px solid white;
+   
+} */

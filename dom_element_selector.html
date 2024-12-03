@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>DOM Element Selector</h1>
+    <div class="div" id="div1">First</div>
+    <div class="div" id="div2">
+    <div id="hello">Div inside another div</div>
+        Second</div>
+    <div class="div" id="div3">Third</div>
+    <div class="div" id="div4">Fourth</div>
+    <div class="div" id="div5">Fifth</div>
+    <div class="div" id="div6">Sixth</div>
+
+    <script>
+    // let div = document.getElementById("div1");
+    // console.log(div1);
+    // let div = document.getElementsByClassName("div");
+    // console.log(div);
+    // let div = document.getElementsByTagName("div");
+    // console.log(div);
+
+    let div = document.querySelector("div");
+    console.log(div);
+    // let div = document.querySelector("div #hello");
+    // console.log(div);
+    // let arr = Array.from(div);
+    // arr.forEach(element => {         //can we used in querySelector but we have to convert them into array.
+    //     console.log(element);
+    // });
+    // for(myDiv of div){     //Produce an error
+    //     console.log(myDiv);
+    // }
+    
+
+    // let div = document.querySelectorAll(".div");
+    // console.log(div);
+    // console.log(div.length);         //both can we used in querySelectorAll  there is no need of conversion 
+    // for(let myDiv of div){   
+    //     console.log(myDiv);
+    // }
+    // div.forEach(el=>{
+    //     console.log(el);
+    // });
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <div class="main">
+        <img src="bulbON.jpg" alt="bulb-off" id="img" height="300px">
+        <div class="bulbcontainer">
+            <button class="bulb-on" id="btn">ON</button>
+        </div>
+    </div>
+    <script>
+      let btn = document.getElementById('btn');
+      let bulb = document.getElementById('img');
+      btn.addEventListener('click',function(){
+        btn.innerText == 'ON' ? (bulb.src = 'bulbON.jpg',btn.innerText = 'OFF'):(bulb.src = 'bulbOFF.jpg',btn.innerText = 'ON')
+      })
+    </script>
+</body>
+</html>
